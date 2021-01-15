@@ -136,17 +136,12 @@ body {
 
 
 
-@media (max-width: 900px) {
-    .top-section-item + .top-section-item{
-        margin-left: 2rem;
-    }
-
+@media (max-width: 1000px) and (min-width: 600px){
     .middle-section-container {
         display: flex;
         flex-direction: column;
         justify-content: stretch;
-        align-items: center;
-        width: 100%;
+        align-items: stretch;
     }
     
     .middle-section-left-half {
@@ -163,14 +158,5 @@ body {
     
     .middle-section-aside-container {
         height: 100%;
-        width: 100%;
     }
 }
-
-@media (max-width: 600px){
-    .middle-section-container {
-        height: 27rem;
-        width: 100%;
-    }
-}
-
