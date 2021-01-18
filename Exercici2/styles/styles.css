@@ -1,3 +1,5 @@
+/* GENERAL LAYOUT  */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* TOP SECTION LAYOUT  */
 
 .top-padding {
     padding: 0 2rem;
@@ -53,6 +57,8 @@ body {
     width: 100%;
     background-color: #FED460;
 }
+
+/* MIDDLE SECTION LAYOUT  */
 
 .middle-padding {
     padding: 2rem;
@@ -126,6 +132,8 @@ body {
     background-color: #70A3C4;
 }
 
+/* BOTTOM SECTION LAYOUT  */
+
 .bottom-section {
     margin-top: 3rem;
     width: 100%;
@@ -134,7 +142,7 @@ body {
     border: 2.62rem solid black;
 }
 
-
+/* REPONSIVE LAYOUT TABLET */
 
 @media (max-width: 900px) {
     .top-section-item + .top-section-item{
@@ -166,6 +174,8 @@ body {
         width: 100%;
     }
 }
+
+/* REPONSIVE LAYOUT MOBILE */
 
 @media (max-width: 600px){
     .middle-section-container {

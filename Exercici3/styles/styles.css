@@ -1,3 +1,6 @@
+
+/* GENERAL SECTION LAYOUT  */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* TOP SECTION LAYOUT  */
 
 .top-padding {
     padding: 0 2rem;
@@ -53,6 +58,8 @@ body {
     width: 100%;
     background-color: #FED460;
 }
+
+/* MIDDLE SECTION LAYOUT  */
 
 .middle-padding {
     padding: 2rem;
@@ -126,6 +133,8 @@ body {
     background-color: #70A3C4;
 }
 
+/* BOTTOM SECTION LAYOUT  */
+
 .bottom-section {
     margin-top: 3rem;
     width: 100%;
@@ -134,7 +143,38 @@ body {
     border: 2.62rem solid black;
 }
 
+/* RESPONSIVE LAYOUT TABLET */
 
+@media (max-width: 900px) {
+    .top-section-item + .top-section-item{
+        margin-left: 2rem;
+    }
+
+    .middle-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .middle-section-left-half {
+        width: 90%;
+        height: 70%;
+    }
+    
+    .middle-section-aside {
+        border-left: none;
+        border-top: 3rem solid black;
+        width: 90%;
+        height: 30%;
+    }
+    
+    .middle-section-aside-container {
+        height: 100%;
+        width: 100%;
+    }
+}
 
 @media (max-width: 1000px) and (min-width: 600px){
     .middle-section-container {
@@ -160,3 +200,11 @@ body {
         height: 100%;
     }
 }
+
+/* REPONSIVE LAYOUT MOBILE */
+
+@media (max-width: 600px){
+    .middle-section-container {
+        height: 27rem;
+        width: 100%;
+    }
